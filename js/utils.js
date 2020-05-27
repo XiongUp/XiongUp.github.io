@@ -39,15 +39,6 @@ function isMobile() {
   return check
 };
 
-window.adapt = function() {
-  var img = new Image();
-  img.src = $('#imgs').attr("src");
-  var imgWidth = img.width;
-  if(imgWidth<1100){
-    $('#imgs').attr("style","transform: scale(0.66)");
-  }
-};
-
 window.debounce = debounce
 
 window.throttle = throttle
